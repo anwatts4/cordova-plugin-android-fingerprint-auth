@@ -172,6 +172,7 @@ public class FingerprintAuthenticationDialogFragment extends DialogFragment
     @Override
     public void onPause() {
         super.onPause();
+        dismissAllowingStateLoss();
         mFingerprintUiHelper.stopListening();
     }
 
